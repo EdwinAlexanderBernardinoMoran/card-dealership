@@ -27,7 +27,7 @@ export class CarsService {
         return this.cars;
     }
 
-    public findById(id: string) {
+    public findById(id: number) {
         return this.cars[id];
     }
 
