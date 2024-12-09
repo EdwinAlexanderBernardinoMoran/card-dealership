@@ -3,8 +3,6 @@ import { Controller, Get, Param } from '@nestjs/common';
 @Controller('cars')
 export class CarsController {
 
-    private cars = ['Toyota', 'BMW', 'Audi'];
-
     @Get()
     getAllCards() {
         return this.cars;
