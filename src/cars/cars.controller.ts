@@ -15,7 +15,7 @@ export class CarsController {
     }
 
     @Get(':id')
-    getCardById(@Param('id', ParseIntPipe) id: number) 
+    getCardById(@Param('id') id: string) 
     {
         return {
             'car': this.carsService.findById(id)
