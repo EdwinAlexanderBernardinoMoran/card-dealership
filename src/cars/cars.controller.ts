@@ -26,7 +26,7 @@ export class CarsController {
     // @UsePipes(ValidationPipe)
     createCard(@Body() createCardDto: CreateCardDto)
     {
-        return createCardDto
+        return this.carsService.create(createCardDto);
     }
 
     @Patch(':id')
